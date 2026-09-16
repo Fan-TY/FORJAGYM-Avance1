@@ -3,105 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Document</title>
-    <title>Document</title>
 </head>
-<body class="d-flex flex-column min-vh-100">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 justify-content-center gap-4">
-            
-            <a href="" class=" navbar-brand d-flex align-items-center">
-                <img src="/img/forjagym_icono.png" alt="" style="max-width: 40px;">
-                <p class="mb-0 ms-2 fw-bold">ForjaGYM</p>
-            </a>
-            
+<body>
 
-            <div class="collapse navbar-collapse flex-grow-0">
-                <div class="rounded-3 border border-primary-subtle border-3 bg-body-secondary ">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="/client/Inicio.html" class="nav-link px-4">
-                                <i class="fa-solid fa-house me-2"></i>
-                                Inicio
-                            </a>
-                        </li>
+    <header class="sticky-top">
+        <div class=" bg-body shadow-sm">
+            <nav class="navbar navbar-expand-lg container ">
 
-                        <li class="nav-item">
-                            <a href="#" class="nav-link px-4">
-                                <i class="fa-solid fa-phone-flip me-2"></i>
-                                Contacto
-                            </a>
-                        </li>
+                <i class="bi-fire fs-3 me-2 text-primary"></i>
+                <p class="mb-0 fw-bold fs-5">FORJAGYM</p>
 
-                        <!-- CONSULTAS DESPLEGABLE-->
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link px-4 dropdown-toggle" 
-                            role="button" data-bs-toggle="dropdown" id="consultas_ref" aria-expanded="false">
-                                <i class="fa-solid fa-headset me-2"></i>
-                                Consultas
-                            </a>
+                <div class="collapse navbar-collapse  ms-2 py-1">
+                    <ul class="navbar-nav gap-5 fw-bold ms-auto">
+                            <li class="nav-item">
+                                <a href="Inicio.html" class="nav-link">Inicio</a>
+                            </li>
 
-                            <ul class="dropdown-menu " aria-labelledby="consultas_ref">
-                                <li><a href="" class="dropdown-item">Pago</a></li>
-                                <li><a href="" class="dropdown-item">Reembolso</a></li>
-                                <li><a href="" class="dropdown-item">Suscripciones</a></li>
-                            </ul>
-                        </li>
+                            <li class="nav-item"> 
+                                <a href="Contacto.html" class="nav-link">Contacto</a>
+                            </li>
 
-                        <!--PROMOCIONES DESPLEGABLE-->
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link px-4 dropdown-toggle"
-                            role="button" data-bs-toggle="dropdown" id="promociones_ref" aria-expanded="false">
-                                <i class="fa-solid fa-bag-shopping me-2"></i>
-                                Promociones
-                            </a>
+                            <li class="nav-item dropdown"> 
+                                <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="consultas_ref" aria-expanded="false">Consulta</a>
+                                <ul class="dropdown-menu " aria-labelledby="consultas_ref">
+                                    <li><a href="" class="dropdown-item">Pago</a></li>
+                                    <li><a href="" class="dropdown-item">Reembolso</a></li>
+                                    <li><a href="" class="dropdown-item">Suscripciones</a></li>
+                                </ul>
+                            </li>
 
-                            <ul class="dropdown-menu" aria-labelledby="promociones_ref">
-                                <li><a href="" class="dropdown-item">Planes</a></li>
-                                <li><a href="" class="dropdown-item">Productos</a></li>
-                            </ul>
-                        </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="promociones_ref" aria-expanded="false">Suscripciones</a>
+                                <ul class="dropdown-menu" aria-labelledby="promociones_ref">
+                                    <li><a href="" class="dropdown-item">Planes</a></li>
+                                    <li><a href="" class="dropdown-item">Productos</a></li>
+                                </ul>
+                            </li>   
 
-                        <li class="nav-item">
-                            <a href="" class="nav-link px-4">
-                                <i class="fa-solid fa-bell me-2"></i>
-                                Notificaciones
-                            </a>
-                        </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Notificaciones</a>
+                            </li>
 
-                        <!-- USUARIO DESPLEGABLE-->
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link px-4 dropdown-toggle"
-                            role="button" data-bs-toggle="dropdown" id="usuario_ref" aria-expanded="false">
-                                <i class="fa-solid fa-user me-2"></i>
-                                Usuario
-                            </a>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="usuario_ref" aria-expanded="false">Usuario</a>
+                                <ul class="dropdown-menu" aria-labelledby="usuario_ref">
+                                    <li><a href="" class="dropdown-item">Ver perfil</a></li>
+                                    <li><a href="" class="dropdown-item">Ver historial</a></li>
+                                    <li><a href="" class="dropdown-item">Cerrar sesión</a></li>
+                                </ul>
+                            </li>
 
-                            <ul class="dropdown-menu" aria-labelledby="usuario_ref">
-                                <li><a href="" class="dropdown-item">Ver perfil</a></li>
-                                <li><a href="" class="dropdown-item">Ver historial</a></li>
-                                <li><a href="" class="dropdown-item">Cerrar sesión</a></li>
-                            </ul>
-                        </li>
-                    </ul> 
+                    </ul>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <div class="card bg-primary text-white p-3" style="background-image: url('/img/forjagym-hero-fondo.svg'); background-size: cover; background-position: center;">
-            <div class="card-body align-items-center justify-content-center text-center">
-                <h1 class="card-title fw-bold">HABLEMOS CON NUESTRO EQUIPO</h1>
-                <p>envíanos tu consulta y te respondermos en brevedad</p>
+        <!-- PAGINA 1 -->
+        <div class="container d-flex flex-column justify-content-center flex-grow-1 min-vh-100">
+            <DIV>
+                <p class="display-3 fw-bold text-primary mb-0">CONTACTANOS</p>
+                <p class="fs-4 mb-5">ESCRIBENOS UN MENSAJE</p>
+            </DIV>
+
+            <div class="row w-100 d-flex ">
+                <div class="col col-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-geo-alt-fill fs-2 me-3 text-primary"></i>
+                        <div>
+                            <h4 class="text-primary">Nuestra dirección</h4>
+                            <p class="mb-0">Av. Tupac Amaru 100</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-telephone-fill fs-2 me-3 text-primary"></i>
+                        <div>
+                            <h4 class="text-primary">Nuestra teléfono</h4>
+                            <p class="mb-0">WhatsApp: +51 987 654 321 <br> Oficina: 51 3456 8974</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-envelope-at-fill fs-2 me-3 text-primary"></i>
+                        <div>
+                            <h4 class="text-primary">Nuestro Email</h4>
+                            <p class="mb-0">ForjaGYM.pe@gmail.com <br> ForjaGYM_SP@gmail.com</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col ">
+                    <div class="form-group d-flex flex-column gap-2">
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Nombre de usuario</label>
+                                <input type="text" placeholder="Tu nombre" class="form-control" style="background-color: rgb(247, 243, 243);">
+                            </div>
+
+                            <div class="col">
+                                <label for="">Correo eléctronico</label>
+                                <input type="email" placeholder="correo@gmail.com" class="form-control" style="background-color: rgb(247, 243, 243);">
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column gap-2">
+                            <label for="">Asunto</label>
+                            <select name="" id="" class="form-control" style="background-color: rgb(247, 243, 243);">
+                                <option value="">Solicitud de reembolso</option>
+                                <option value="">Problemas de pago</option>
+                                <option value="">Consulta de membresía</option>
+                                <option value="">otro asunto</option>
+                            </select>
+
+                            <label for="">Mensaje personalizado</label>
+                            <textarea name="" id="" class="form-control" placeholder="Cuéntanos en qué podemos ayudarte..." style="background-color: rgb(247, 243, 243);"></textarea>
+
+                            <div class="">
+                                <button class="btn btn-primary mt-3 btn-lg">Enviar mensaje</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- PAGINA 2 -->
+        <div class="bg-primary min-vh-100 d-flex align-items-center">
+            <div class="container text-center text-white fs-5  ">
+                <i class="bi bi-calendar-check fs-2 "></i>
+                <p class="display-6 mb-5 mt-3 fw-bold">HORARIO DE ATENCIÓN</p>
+                <table class="table align-middle ">
+                        <tbody>
+                                <tr >
+                                    <td class="bg-transparent text-white">Lunes a Viernes</td>
+                                    <td class="bg-transparent text-white">8:00 - 23:00</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="bg-white bg-opacity-10 text-white" >Sábado</td>
+                                    <td class="bg-white bg-opacity-10 text-white">8:00 - 14:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-transparent text-white">Domingo</td>
+                                    <td class="bg-transparent text-white">CERRADO</td>
+                                </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="bg-dark text-white pt-5 pb-3 ">
+        <div class="container">
+
+            
+            <div class="row g-4">
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-fire fs-3 me-2 text-primary"></i>
+                        <span class="fw-bold fs-4">FORJAGYM</span>
+                    </div>
+                    <p class="text-white-50 mb-4">
+                        Forja tu cuerpo y tu mente con entrenadores especializados,
+                        planes personalizados y resultados medibles. Tu mejor versión empieza aquí.
+                    </p>
+
+                    
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3 text-primary">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Contacto</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Planes</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Productos</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Notificaciones</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3 text-primary">Soporte</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Preguntas frecuentes</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Pagos</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Reembolsos</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Términos y condiciones</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Política de privacidad</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-3 text-primary">Contacto</h5>
+
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="bi bi-geo-alt fs-5 me-3 text-primary"></i>
+                        <p class="mb-0 text-white-50">Tupac Amaru 100 - Peru</p>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="bi bi-envelope fs-5 me-3 text-primary"></i>
+                        <p class="mb-0 text-white-50">ForjaGYM.pe@gmail.com</p>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="bi bi-telephone fs-5 me-3 text-primary"></i>
+                        <p class="mb-0 text-white-50">+51 977 450 891</p>
+                    </div>
+
+                    <div class="d-flex align-items-start">
+                        <i class="bi bi-clock fs-5 me-3 text-primary"></i>
+                        <p class="mb-0 text-white-50">
+                            Lun - Sáb: 6:00 am - 10:00 pm<br>
+                            Dom: 8:00 am - 2:00 pm
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <hr class="border-secondary my-4">
+
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="mb-0 text-white-50 small">
+                        © 2026 <span class="">FORJAGYM</span>. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none small me-3">Términos</a>
+                    <a href="#" class="text-white-50 text-decoration-none small me-3">Privacidad</a>
+                    <a href="#" class="text-white-50 text-decoration-none small">Cookies</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
