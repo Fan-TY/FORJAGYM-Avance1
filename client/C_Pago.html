@@ -64,101 +64,77 @@
 
     <main>
         <!-- PAGINA 1 -->
-        <div class="container d-flex flex-column justify-content-center flex-grow-1 min-vh-100">
-            <DIV>
-                <p class="display-3 fw-bold text-primary mb-0">CONTACTANOS</p>
-                <p class="fs-4 mb-5 text-secondary">Escribenos un mensaje</p>
-            </DIV>
+        <div class="">
+            <div class="container d-flex flex-column justify-content-center flex-grow-1 min-vh-100">
+                
+                <p class="display-5 fw-bold text-primary mb-0">CENTRO DE CONSULTAS</p>
+                <p class="fs-4 text-secondary ">resuelva sus dudas sobre pagos, reembolsos y membresias</p>
+                
+                <div class="accordion mt-3" id="accordionConsultas">
 
-            <div class="row w-100 d-flex ">
-                <div class="col col-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="bi bi-geo-alt-fill fs-2 me-3 text-primary"></i>
-                        <div>
-                            <h4 class="text-primary">Nuestra dirección</h4>
-                            <p class="mb-0">Av. Tupac Amaru 100</p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush_cp1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                                ¿Qué métodos de pago aceptan?
+                            </button>
+                        </h2>
+                        <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush_cp1" data-bs-parent="accordionConsultas">
+                            <div class="accordion-body">
+                                Aceptamos tarjetas de crédito y débito (Visa, Mastercard), transferencias bancarias y pagos en efectivo en nuestra sede principal.
+                            </div>
                         </div>
                     </div>
 
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="bi bi-telephone-fill fs-2 me-3 text-primary"></i>
-                        <div>
-                            <h4 class="text-primary">Nuestra teléfono</h4>
-                            <p class="mb-0">WhatsApp: +51 987 654 321 <br> Oficina: 51 3456 8974</p>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush_cp2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                                ¿Emiten boletas o facturas?
+                            </button>
+                        </h2>
+                        <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush_cp2" data-bs-parent="accordionConsultas">
+                            <div class="accordion-body">
+                                Sí, generamos boleta electrónica automáticamente. Si necesitas factura, puedes solicitarla proporcionando tu RUC al momento del pago o escribiendo a nuestro correo de soporte.
+                            </div>
                         </div>
                     </div>
 
-                    <div class="d-flex align-items-center">
-                        <i class="bi bi-envelope-at-fill fs-2 me-3 text-primary"></i>
-                        <div>
-                            <h4 class="text-primary">Nuestro Email</h4>
-                            <p class="mb-0">ForjaGYM.pe@gmail.com <br> ForjaGYM_SP@gmail.com</p>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush_cp3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                                ¿Qué pasa si mi pago no se procesa correctamente?
+                            </button>
+                        </h2>
+                        <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush_cp3" data-bs-parent="accordionConsultas">
+                            <div class="accordion-body">
+                                Si tu pago falla, recibirás una notificación por tu cuenta de ForjaGym. Tienes un plazo de 3 días hábiles para regularizarlo antes de que tu acceso se suspenda temporalmente.
+                            </div>
                         </div>
                     </div>
+
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush_cp4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                                ¿Puedo pagar mi membresía de forma mensual o solo anual?
+                            </button>
+                        </h2>
+                        <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush_cp4" data-bs-parent="accordionConsultas">
+                            <div class="accordion-body">
+                                Ofrecemos ambas modalidades. El pago mensual te da mayor flexibilidad, mientras que el plan anual incluye un descuento por pago adelantado
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
 
-                <div class="col ">
-                    <div class="form-group d-flex flex-column gap-2">
-                        <div class="row">
-                            <div class="col">
-                                <label for="">Nombre de usuario</label>
-                                <input type="text" placeholder="Tu nombre" class="form-control" style="background-color: rgb(247, 243, 243);">
-                            </div>
-
-                            <div class="col">
-                                <label for="">Correo eléctronico</label>
-                                <input type="email" placeholder="correo@gmail.com" class="form-control" style="background-color: rgb(247, 243, 243);">
-                            </div>
-                        </div>
-
-                        <div class="d-flex flex-column gap-2">
-                            <label for="">Asunto</label>
-                            <select name="" id="" class="form-control" style="background-color: rgb(247, 243, 243);">
-                                <option value="">Solicitud de reembolso</option>
-                                <option value="">Problemas de pago</option>
-                                <option value="">Consulta de membresía</option>
-                                <option value="">otro asunto</option>
-                            </select>
-
-                            <label for="">Mensaje personalizado</label>
-                            <textarea name="" id="" class="form-control" placeholder="Cuéntanos en qué podemos ayudarte..." style="background-color: rgb(247, 243, 243);"></textarea>
-
-                            <div class="">
-                                <button class="btn btn-primary mt-3 btn-lg">Enviar mensaje</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <!-- PAGINA 2 -->
-        <div class="bg-primary min-vh-100 d-flex align-items-center">
-            <div class="container text-center text-white fs-5  ">
-                <i class="bi bi-calendar-check fs-2 "></i>
-                <p class="display-6 mb-5 mt-3 fw-bold">HORARIO DE ATENCIÓN</p>
-                <table class="table align-middle ">
-                        <tbody>
-                                <tr >
-                                    <td class="bg-transparent text-white">Lunes a Viernes</td>
-                                    <td class="bg-transparent text-white">8:00 - 23:00</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="bg-white bg-opacity-10 text-white" >Sábado</td>
-                                    <td class="bg-white bg-opacity-10 text-white">8:00 - 14:00</td>
-                                </tr>
-                                <tr>
-                                    <td class="bg-transparent text-white">Domingo</td>
-                                    <td class="bg-transparent text-white">CERRADO</td>
-                                </tr>
-                        </tbody>
-                </table>
-            </div>
-        </div>
-
-
+    
 
     </main>
 
