@@ -68,112 +68,142 @@
 
     <main>
         <!-- PAGINA 1 -->
-        <div class="container d-flex flex-column justify-content-center flex-grow-1 min-vh-100">
-
-            <div class="nav nav-pills gap-2 mb-5">
-                <div class="nav-item ">
-                    <button class="nav-link active" data-bs-toggle="pill">Todos</button>
-                </div>
-                <div class="nav-item">
-                    <button class="nav-link" data-bs-toggle="pill">Nuevos</button>
-                </div>
-                <div class="nav-item ">
-                    <button class="nav-link" data-bs-toggle="pill">Populares</button>
-                </div>
-                <div class="nav-item ">
-                    <button class="nav-link" data-bs-toggle="pill">Tiempo limitado</button>
-                </div>
+        <div class="container d-flex justify-content-center flex-grow-1 min-vh-100 flex-column">
+            <div class="pb-3">
+                <p class="text-primary fs-2 fw-bold mb-0">COMPROBANTES DE PAGO</p>
+                <p class="fs-5 text-secondary">Historial de cobros de tu membresía y compras en tienda</p>
             </div>
 
-            <p class="fw-bold text-primary fs-2 mb-0">PLANES DE ENTRENAMIENTO</p>
-            <p class="fs-5 text text-secondary">Elige el plan que mejor se adapte a tus objetivos. Sin matrícula, sin contratos forzosos, cancela cuando quieras</p>
-
-            <DIV class="row mt-4 pb-4">
-
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header text-center ">
-                            <div class="d-flex justify-content-center ">
-                                <p class="fs-3 text-primary fw-bold">$</p>
-                                <p class="fs-1 text-primary fw-bold mb-0">180</p>
-                                <p class="text-secondary pt-2 ms-1">Mensual</p>
-                            </div>
-                            <p class="fs-4 fw-bold text-primary">Fuerza Total</p>
-                        </div>
-
-                        <div class="card-body">
-                            <ul>
-                                <li>Acceso ilimitado a zonas y máquinarias</li>
-                                <li>Acompañamiento de un Coach personalizado</li>
-                                <li>Evaluación gratuita</li>
-                            </ul>
-                            <div class="d-flex justify-content-center">
-                                <button class="btn btn-primary">Agregar</button>
+            <div class="pb-5">
+                <form action="">
+                    <div class="row justify-content-between">
+                        <div class="col-5">
+                            <div class="d-flex gap-2">
+                                <input type="search" class="form-control" placeholder="Buscar comprobante">
+                                <button class="btn btn-outline-primary text-nowrap">Buscar</button>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        
+                        <div class="col-6 d-flex gap-2">
+                            <select name="" id="" class="form-select">
+                                <option value="">Todo el periodo</option>
+                                <option value="">Este mes</option>
+                                <option value="">Mes anterior</option>
+                                <option value="">Últimos 6 meses</option>
+                                <option value="">Este año</option>
+                            </select>
 
+                            <select name="" id="" class="form-select">
+                                <option value="">Todos los tipos</option>
+                                <option value="">Boletas de planes</option>
+                                <option value="">Boletas de productos</option>
+                                <option value="">Reembolsos</option>
+                            </select>
 
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header text-center bg-primary">
-                            <div class="d-flex justify-content-center ">
-                                <p class="fs-3 text-white fw-bold">$</p>
-                                <p class="fs-1 text-white fw-bold mb-0">120</p>
-                                <p class="text-white pt-2 ms-1">Mensual</p>
-                            </div>
-                            <p class="fs-4 fw-bold text-white">Funcional grupal</p>
-                        </div>
-
-                        <div class="card-body">
-                            <ul>
-                                <li>Clases 3x semana</li>
-                                <li>Clases grupales de 1 hora</li>
-                                <li>Entrenamiento funcional guiado</li>
-                            </ul>
-                            <div class="d-flex justify-content-center">
-                                <button class="btn btn-primary">Agregar</button>
-                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
+            </div>
 
+            <div>
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col">Comprobante</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Método</th>
+                            <th scope="col">Monto</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">opciones</th>
+                        </tr>
+                    </thead>
 
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header text-center ">
-                            <div class="d-flex justify-content-center ">
-                                <p class="fs-3 text-primary fw-bold">$</p>
-                                <p class="fs-1 text-primary fw-bold mb-0">80</p>
-                                <p class="text-secondary pt-2 ms-1">Mensual</p>
-                            </div>
-                            <p class="fs-4 fw-bold text-primary">Plan Básico</p>
-                        </div>
+                    <tbody class="">
+                        <tr >
+                            <td scope="row">
+                                <p class="mb-0 fw-bold text-secondary">Boleta B001-0512</p>
+                                Renovación de Plan Fuerza Total
+                            </td>
+                            <td>18/08/2026</td>
+                            <td>Visa ****4821</td>
+                            <td>$180</td>
+                            <td><span class="badge bg-primary">Pagado</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-link text-secondary p-1" title="Ver detalle" onclick="window.location.href='Comprobante.html'">
+                                    <i class="bi bi-eye fs-5"></i>
+                                </button>
+                                <button class="btn btn-sm btn-link text-secondary p-1" title="Más opciones">
+                                    <i class="bi bi-three-dots-vertical fs-5"></i>
+                                </button>
+                            </td>
+                        </tr>
 
-                        <div class="card-body">
-                            <ul>
-                                <li>Acceso a la sala de pesas</li>
-                                <li>Acceso a zona de cardio</li>
-                                <li>Evaluación física inicial</li>
-                            </ul>
-                            <div class="d-flex justify-content-center">
-                                <button class="btn btn-primary">Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <tr>
+                            <td scope="row">
+                                <p class="mb-0 fw-bold text-secondary">Boleta B001-0481</p>
+                                Renovación de Plan Fuerza Total
+                            </td>
+                            <td>18/07/2026</td>
+                            <td>Visa ****4821</td>
+                            <td>$180</td>
+                            <td><span class="badge bg-primary">Pagado</span></td>
+                            <td>
+                                        <button class="btn btn-sm btn-link text-secondary p-1" title="Ver detalle">
+                                            <i class="bi bi-eye fs-5"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-link text-secondary p-1" title="Más opciones">
+                                            <i class="bi bi-three-dots-vertical fs-5"></i>
+                                        </button>
+                            </td>
+                        </tr>
 
+                        <tr>
+                            <td scope="row">
+                                <p class="mb-0 fw-bold text-secondary">Boleta B001-0481</p>
+                                Renovación de Plan Fuerza Total
+                            </td>
+                            <td>18/07/2026</td>
+                            <td>Visa ****4821</td>
+                            <td>$180</td>
+                            <td><span class="badge bg-danger">Pendiente</span></td>
+                            <td>
+                                        <button class="btn btn-sm btn-link text-secondary p-1" title="Ver detalle">
+                                            <i class="bi bi-eye fs-5"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-link text-secondary p-1" title="Más opciones">
+                                            <i class="bi bi-three-dots-vertical fs-5"></i>
+                                        </button>
+                            </td>
+                        </tr>
+                                
+                        <tr>
+                            <td scope="row">
+                                <p class="mb-0 fw-bold text-secondary">Boleta B001-0253</p>
+                                Renovación de Plan Fuerza Total
+                                </td>
+                                <td>18/07/2026</td>
+                                <td>Visa ****4821</td>
+                                <td>$180</td>
+                                <td><span class="badge bg-primary">Pagado</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-link text-secondary p-1" title="Ver detalle">
+                                        <i class="bi bi-eye fs-5"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-link text-secondary p-1" title="Más opciones">
+                                        <i class="bi bi-three-dots-vertical fs-5"></i>
+                                    </button>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
 
-            </DIV>
         </div>
-
-
 
 
     </main>
 
-    <footer class="bg-dark text-white pt-5 pb-3 ">
+    <footer class="bg-dark text-white  pb-3">
         <div class="container">
 
             
