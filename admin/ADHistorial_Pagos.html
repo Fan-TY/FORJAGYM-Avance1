@@ -24,9 +24,16 @@
 
 
                             <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="registrar_ref" aria-expanded="false">Registrar</a>
+                                <ul class="dropdown-menu" aria-labelledby="registrar_ref">
+                                    <li><a href="Registrar_clienteP1.html" class="dropdown-item">Cliente</a></li>
+                                    <li><a href="" class="dropdown-item">Reembolso</a></li>
+                                </ul>
+                            </li>   
+
+                            <li class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="promociones_ref" aria-expanded="false">Suscripciones</a>
                                 <ul class="dropdown-menu" aria-labelledby="promociones_ref">
-                                    <li><a href="" class="dropdown-item">Editar suscripción</a></li>
                                     <li><a href="Sus_crear.html" class="dropdown-item">Crear suscripción</a></li>
                                     <li><a href="Sus_administrar.html" class="dropdown-item">Administrar</a></li>
                                 </ul>
@@ -43,7 +50,7 @@
 
 
                             <li class="nav-item">
-                                <a href="l" class="nav-link">Historial</a>
+                                <a href="ADHistorial_Pagos.html" class="nav-link">Historial</a>
                             </li>
 
                             <li class="nav-item dropdown">
@@ -90,48 +97,47 @@
                 <p class="text-secondary fs-5">Consulta las sucripciones de los clientes</p>
 
 
-                <div class="card border-0 shadow-sm mt-4">
-                    <table class="table table-striped align-middle mb-0">
+            <div class="card border-0 shadow-sm ">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
                         <thead>
                             <tr>
-                                <th scope="col">Plan</th>
-                                <th scope="col">Categoría</th>
-                                <th scope="col">Precio</th>
-                                <th scope="col">Estado</th>
-                                <th scope="col">Editar plan</th>
+                                <th>Cliente</th>
+                                <th>Plan</th>
+                                <th>Fecha inicio</th>
+                                <th>Vencimiento</th>
+                                <th>Monto pagado</th>
+                                <th>Último pago</th>
+                                <th>Estado</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr >
-                                <td class="text-secondary fw-bold">Fuerza Total</td>
-                                <td>Entrenamiento</td>
+                            <tr>
+                                <td>Carla Vega Rojas</td>
+                                <td>Fuerza Total</td>
+                                <td>12/07/2026</td>
+                                <td>12/09/2026</td>
                                 <td>S/180</td>
+                                <td>12/08/2026</td>
                                 <td><span class="badge bg-success">Activo</span></td>
-                                <td>
-                                    <a href="Sus_editar.html" class="nav-link text-secondary">Editar</a>
-                                </td>
                             </tr>
-
                             <tr>
-                                <td class="text-secondary fw-bold">Funcional Grupal</td>
-                                <td>Entrenamiento</td>
+                                <td>Javier Morales</td>
+                                <td>Funcional Grupal</td>
+                                <td>02/07/2026</td>
+                                <td>02/09/2026</td>
                                 <td>S/120</td>
+                                <td>02/08/2026</td>
                                 <td><span class="badge bg-success">Activo</span></td>
-                                <td>
-                                    <a href="Sus_editar.html" class="nav-link text-secondary">Editar</a>
-                                </td>
                             </tr>
-
                             <tr>
-                                <td class="text-secondary fw-bold">Funcional Express</td>
-                                <td>Entrenamiento</td>
-                                <td>S/95</td>
-                                <td>
-                                    <span class="badge bg-warning text-dark">Borrador</span>
-                                </td>
-                                <td>
-                                    <a href="Sus_editar.html" class="nav-link text-secondary">Editar</a>
-                                </td>
+                                <td>María López</td>
+                                <td>Fuerza Total</td>
+                                <td>10/03/2026</td>
+                                <td>10/11/2026</td>
+                                <td>S/180</td>
+                                <td>10/08/2026</td>
+                                <td><span class="badge bg-success">Activo</span></td>
                             </tr>
                         </tbody>
                     </table>
