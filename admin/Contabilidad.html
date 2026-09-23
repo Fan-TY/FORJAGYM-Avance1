@@ -24,12 +24,8 @@
 
 
                             <li class="nav-item dropdown">
-                                <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="registrar_ref" aria-expanded="false">Registrar</a>
-                                <ul class="dropdown-menu" aria-labelledby="registrar_ref">
-                                    <li><a href="Registrar_clienteP1.html" class="dropdown-item">Cliente</a></li>
-                                    <li><a href="" class="dropdown-item">Reembolso</a></li>
-                                </ul>
-                            </li>   
+                                <a href="Registrar_clienteP1.html" class="nav-link">Registrar Cliente</a>
+                            </li> 
 
                             <li class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="promociones_ref" aria-expanded="false">Suscripciones</a>
@@ -70,9 +66,13 @@
     <main>
         <!-- PAGINA 1 -->
         <div class="">
-            <div class="container d-flex flex-column justify-content-center flex-grow-1 min-vh-100">
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="fs-2 text-danger mb-0 fw-bold">MÉTRICAS CLAVE</p>
+            <div class="container d-flex flex-column justify-content-start flex-grow-1 min-vh-100 mt-5">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <p class="mb-0 fs-2 text-danger fw-bold">MÉTRICAS CLAVES DEL SISTEMA</p>
+                        <span class="text-secondary fs-5 ">Estado de las principales métricas durante la presente semana</span>
+                    </div>
+
                     <form action="" class="form-group w-25">
                         <select name="" id="" class="form-select">
                             <option value="">Ingresos del día</option>
@@ -83,52 +83,70 @@
                         </select>
                     </form>
                 </div>
-                    
-                <p class="text-secondary fs-5 mb-0">Estado de las principales métricas clave de ForjaGYM durante la presente semana</p>
-
-                <div class="row mt-4">
-                    <div class="col-8">
-                        <div class="card rounded-4 border-2 border border-danger">
-                            <div class="card-body">
-                                
-                                <h5 class="card-title text-danger">Ingresos del día</h5>
-                                <p class="text-muted small">Dinero generado por los pagos</p>
-                                <div class="d-flex justify-content-center">
-                                    <div style="height: 250px; width: 500px;">
-                                        <canvas id="ingresos"></canvas>
-                                    </div>
-                                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body text-center ">
+                                <i class="bi bi-cash-coin text-success fs-2 mb-0"></i>
+                                <h5 class="mt-2 mb-1 text-success">Ingresos del día</h5>
+                                <div class="fs-4 fw-bold text-success">S/ 1,250</div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-4  ">
-                        <div class="row g-3 h-100 align-content-center">
-                            <div class="col-12 ">
-                                <div class="card text-center text-danger rounded-4 border-2 border border-danger bg-danger-subtle">
-                                    <div class="card-body">
-                                        <i class="bi bi-cash-coin fs-1"></i>
-                                        <h4 class="mb-2">INGRESOS DEL DÍA</h4>
-                                        
-                                        <h4 class="text-secondary fw-bold">$ 1,250</h4>
-                                    </div>
-                                </div>
+                    <div class="col">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body text-center ">
+                                <i class="bi bi-people-fill text-primary fs-2"></i>
+                                <h5 class="mt-2 mb-1 text-primary">Clientes activos</h5>
+                                <div class="fs-4 fw-bold text-primary">85</div>
                             </div>
+                        </div>
+                    </div>
+      
+                    <div class="col">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body text-center ">
+                                <i class="bi bi-x-circle-fill text-danger fs-2"></i>
+                                <h5 class="mt-2 mb-1 text-danger">Pagos rechazados de la semana</h5>
+                                <div class="fs-4 fw-bold text-danger">5</div>
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="col-12">
-                                <div class="card bg-danger text-white p-1 rounded-4 border-0">
-                                    <div class="card-body">
-                                        <p class="mb-1 fw-bold fs-5">INGRESOS DEL DÍA</p>
-                                        <p class="mb-0">Total facturado hoy por pagos confirmados.</p>
-                                        <i >Mide la salud financiera diaria del negocio</i>
-                                    </div>
-                                </div>
+                    <div class="col">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body text-center ">
+                                <i class="bi bi-box-seam-fill text-info fs-2"></i>
+                                <h5 class="mt-2 mb-1 text-info">Suscripciones realizadas</h5>
+                                <div class="fs-4 fw-bold text-info">92</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body text-center ">
+                                <i class="bi bi-calendar-x-fill text-warning fs-2"></i>
+                                <h5 class="mt-2 mb-1 text-warning">Notificaciones no leídas</h5>
+                                <div class="fs-4 fw-bold text-warning">78</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-
+                <div class="card rounded-4 shadow-sm mt-4 border-0 mb-5">
+                    <div class="card-body"> 
+                        <h5 class="card-title text-danger">Ingresos del día</h5>
+                        <p class="text-muted small">Dinero generado por los pagos</p>
+                        <div class="d-flex justify-content-center">
+                            <div style="height: 250px; width: 550px;">
+                                <canvas id="ingresos"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
 
             </div>
         </div>
