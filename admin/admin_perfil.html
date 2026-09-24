@@ -39,8 +39,8 @@
                             <li class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="AdminNoti_ref" aria-expanded="false">Notificaciones</a>
                                 <ul class="dropdown-menu" aria-labelledby="AdminNoti_ref">
-                                    <li><a href="Sus_crear.html" class="dropdown-item">Crear Notificacion</a></li>
-                                    <li><a href="Sus_administrar.html" class="dropdown-item">Administrar</a></li>
+                                    <li><a href="Noti_crear.html" class="dropdown-item">Crear Notificacion</a></li>
+                                    <li><a href="Noti_admin.html" class="dropdown-item">Administrar</a></li>
                                 </ul>
                             </li>
 
@@ -52,7 +52,7 @@
                             <li class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="usuario_ref" aria-expanded="false">Usuario</a>
                                 <ul class="dropdown-menu" aria-labelledby="usuario_ref">
-                                    <li><a href="" class="dropdown-item">Ver perfil</a></li>
+                                    <li><a href="admin_perfil.html" class="dropdown-item">Ver perfil</a></li>
                                     <li><a href="" class="dropdown-item">Cerrar sesión</a></li>
                                 </ul>
                             </li>
@@ -73,58 +73,106 @@
                 </div>
 
                 <div class="row">
-                    <div class="col">
-                        <div class="card">
+                    <div class="col-12 ">
+                        <div class="card py-3 px-4 shadow-sm border-0">
+                            <div class="card-body align-items-center d-flex ">
+
+                                <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center fs-4 fw-bold" style="height: 70px; width: 70px;">RM</div>
+                                <div class="ms-3">
+                                    <h5 class="card-title text-danger fw-bold mb-1">ROSA MEDINA</h5> 
+                                    <p class="mb-0">COD: AD-777</p>
+                                    
+                                    <span class="badge border border-danger text-secondary">Administrador</span>
+                                    <span class="badge bg-danger">Sede San Isidro</span>
+                                </div>
+                            </div>
+                                
+                        </div>
+                    </div>
+
+                    <div class="col-6 mt-3">
+                        <div class="card px-4 py-3 mb-5 border-danger">
                             <div class="card-body">
-                                <div class="d-flex ">
-                                    <div class="rounded-circle border-0 bg-danger d-flex align-items-center justify-content-center " style="height: 70px; width: 70px;">
-                                        <p class="mb-0 text-white fw-bold text-center">RM</p>
+                                    <p class="mb-0 fw-bold text-danger fs-5">Datos personales</p>
+                                    <div class="justify-content-between d-flex py-2 border-bottom ">
+                                        <span>Usuario</span>
+                                        <span>Rosa Medina</span>
+                                    </div>
+
+                                    <div class="justify-content-between d-flex py-2 border-bottom">
+                                        <span>Cargo</span>
+                                        <span>Recepcionista</span>
+                                    </div>
+
+                                    <div class="justify-content-between d-flex py-2 border-bottom">
+                                        <span>Código</span>
+                                        <span>AD-777</span>
                                     </div>
                                     
-                                        <div class="ms-2">
-                                            <div class="d-flex justify-content-between">
-                                                <span class="fw-bold mb-0 fs-5">ROSA MEDINA</span>
-                                                <span class="badge bg-danger text-white">Sede San Isidro</span>
-                                            </div>
-                                            
-                                            <i class="mb-0">Recepcionista</i>
-                                            <p class="mb-0 fs-6">AD-777</p>
-                                        </div>
-                                        
+                                    <div class="justify-content-between d-flex py-2 border-bottom">
+                                        <span>Documentación</span>
+                                        <span>DNI 72500123</span>
                                     </div>
-                                </div>
-                                <div class="justify-content-between d-flex my-2">
-                                    <span>Usuario</span>
-                                    <span>Rosa Medina</span>
-                                </div>
 
-                                <div class="justify-content-between d-flex my-2">
-                                    <span>Cargo</span>
-                                    <span>Recepcionista</span>
-                                </div>
+                                    <div class="justify-content-between d-flex py-2 border-bottom">
+                                        <span>Correo eléctronico</span>
+                                        <span>rosa.medina@forjagym.com</span>
+                                    </div>
 
-                                <div class="justify-content-between d-flex my-2">
-                                    <span>Código</span>
-                                    <span>AD-777</span>
-                                </div>
-                                
-                                <div class="justify-content-between d-flex my-2">
-                                    <span>Documentación</span>
-                                    <span>DNI 72500123</span>
-                                </div>
+                                    <div class="justify-content-between d-flex py-2 border-bottom">
+                                        <span>Teléfono</span>
+                                        <span>+51 987 654 321</span>
+                                    </div>
 
-                                <div class="justify-content-between d-flex my-2">
-                                    <span>Correo eléctronico</span>
-                                    <span>RMedina@gmail.com</span>
-                                </div>
-                                
+                                    <div class="justify-content-between d-flex py-2 border-bottom">
+                                        <span>Sede</span>
+                                        <span>San Isidro</span>
+                                    </div>
+                                    <div class="justify-content-between d-flex my-2">
+                                        <span>Área </span>
+                                        <span>Área administrativa y atención al cliente</span>
+                                    </div>
+
                             </div>
                         </div>
                     </div>
 
-                    <div class="col">
-                        
+
+                    <div class="col-6 mt-3">
+                        <div class="card bg-danger px-3 py-2">
+                            <div class="card-body text-center">
+                                <p class="text-start fw-bold text-white fs-5">Horario</p>
+                                <table class="table align-middle ">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="bg-transparent text-white">Día</th>
+                                            <th scope="col" class="bg-transparent text-white">Hora</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-white" style="background-color: rgba(238, 90, 105, 0.877);">Lunes - Miercoles</td>
+                                            <td class="text-white" style="background-color: rgba(238, 90, 105, 0.877)">8:00 - 14:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-transparent text-white">Jueves - Viernes</td>
+                                            <td class="bg-transparent text-white">14:00 - 20:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-white" style="background-color: rgba(238, 90, 105, 0.877)">Sábado</td>
+                                            <td class="text-white" style="background-color: rgba(238, 90, 105, 0.877)">8:00 - 17:00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
+
+                    
+
+                </div>
+
+
 
                 </div>
 

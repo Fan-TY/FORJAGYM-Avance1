@@ -38,8 +38,8 @@
                             <li class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="AdminNoti_ref" aria-expanded="false">Notificaciones</a>
                                 <ul class="dropdown-menu" aria-labelledby="AdminNoti_ref">
-                                    <li><a href="" class="dropdown-item">Crear Notificacion</a></li>
-                                    <li><a href="" class="dropdown-item">Administrar</a></li>
+                                    <li><a href="Noti_crear.html" class="dropdown-item">Crear Notificacion</a></li>
+                                    <li><a href="Noti_admin.html" class="dropdown-item">Administrar</a></li>
                                 </ul>
                             </li>
 
@@ -51,7 +51,7 @@
                             <li class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="usuario_ref" aria-expanded="false">Usuario</a>
                                 <ul class="dropdown-menu" aria-labelledby="usuario_ref">
-                                    <li><a href="" class="dropdown-item">Ver perfil</a></li>
+                                    <li><a href="admin_perfil.html" class="dropdown-item">Ver perfil</a></li>
                                     <li><a href="" class="dropdown-item">Cerrar sesión</a></li>
                                 </ul>
                             </li>
@@ -80,39 +80,39 @@
                                 <div class="col-12">
                                     <label for="" class="form-label">Tipo de suscripción</label>
                                     <select name="tipo" id="tipo" class="form-select" onchange="toggleProductos(this)">
-                                        <option value="entrenamiento">Plan de entrenamiento</option>
+                                        <option value="entrenamiento" selected>Plan de entrenamiento</option>
                                         <option value="productos">Membresia a productos</option>
                                     </select>
                                 </div>
                                 <div class="col-6">
                                     <label for="" class="form-label">Nombre de  la suscripción</label>
-                                    <input type="text" class="form-control" placeholder="Fuerza Total">
+                                    <input type="text" class="form-control" value="Fuerza Total">
                                 </div>
 
                                 <div class="col-6">
                                     <label for="" class="form-label">Precio</label>
-                                    <input type="number" class="form-control" placeholder="180">
+                                    <input type="number" class="form-control" value="180">
                                 </div>
 
                                 
                                 <div class="col-6">
                                     <label for="" class="form-label">Tiempo de duración (Meses)</label>
-                                    <input type="number" class="form-control" placeholder="1">
+                                    <input type="number" class="form-control" value="1">
                                 </div>
 
 
                                 <div class="col-6">
                                     <label for="" class="form-label">Estado de la suscripción</label>
                                     <select name="" id="" class="form-select">
-                                        <option value="">Activo</option>
-                                        <option value="">Inactivo</object>
+                                        <option value="" selected>Activo</option>
+                                        <option value="">Inactivo</option>
                                         <option value="">Borrador</option>
                                     </select>
                                 </div>    
 
                                 <div class="col-12">
                                     <label for="" class="form-label">Contenido de la suscripción</label>
-                                    <textarea name="" id="" class="form-control" rows="6" placeholder="Acceso ilimitado a zonas y máquinarias&#10;Acompañamiento de un Coach personalizado&#10;Evaluación gratuita"></textarea>
+                                    <textarea name="" id="" class="form-control" rows="6">Acceso ilimitado a zonas y máquinarias&#10;Acompañamiento de un Coach personalizado&#10;Evaluación gratuita</textarea>
                                 </div>
 
                                 <div class="col-12 d-none" id="productos-contenido">

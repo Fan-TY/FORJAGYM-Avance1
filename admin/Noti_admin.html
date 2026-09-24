@@ -25,7 +25,7 @@
 
                             <li class="nav-item dropdown">
                                 <a href="Registrar_clienteP1.html" class="nav-link">Registrar Cliente</a>
-                            </li>    
+                            </li>   
 
                             <li class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="promociones_ref" aria-expanded="false">Suscripciones</a>
@@ -39,7 +39,7 @@
                             <li class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="AdminNoti_ref" aria-expanded="false">Notificaciones</a>
                                 <ul class="dropdown-menu" aria-labelledby="AdminNoti_ref">
-                                    <li><a href="Noti_crear.html" class="dropdown-item">Crear Notificacion</a></li>
+                                    <li><a href="Noti_crear.h" class="dropdown-item">Crear Notificacion</a></li>
                                     <li><a href="Noti_admin.html" class="dropdown-item">Administrar</a></li>
                                 </ul>
                             </li>
@@ -67,112 +67,99 @@
         <!-- PAGINA 1 -->
         <div class="">
             <div class="container d-flex flex-column justify-content-start flex-grow-1 min-vh-100 mt-5">
-                <p class="fs-2 text-danger fw-bold mb-0">SELECCIÓN DE PLAN DE ENTRENAMIENTO</p>
-                <p class="text-secondary fs-5">Compara las opciones y asigna la que mejor se adapte al socio</p>
 
-                <div class="row">
-                    <div class="col">
-                        <div class="card text-secondary py-3 border shadow-sm p-2 h-100">
-                            <div class="card-body ">
-                                <h5 class="text-danger fw-bold">Plan de entrenamiento</h5>
-                                <p>Elige el plan con el que se registrará este socio.</p>
-
-                                <div class="row">
-
-                                    <div class="col">
-                                        <div class="card border-danger h-100">
-                                            <div class="card-header text-center bg-danger-subtle border-danger ">
-                                                <p class="mb-0 fw-bold">Fuerza Total</p>
-                                                <p class="mb-0 text-secondary">$180/mes</p>
-                                            </div>
-                                            <div class="card-body">
-                                                <ul>
-                                                    <li>Acceso ilimitado a zonas</li>
-                                                    <li>Coach personalizado</li>
-                                                    <li>Evaluación gratuita</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <div class="card-header text-center">
-                                                <p class="mb-0 fw-bold">Funcional Grupal</p>
-                                                <p class="mb-0 text-secondary">$120/mes</p>
-                                            </div>
-                                            <div class="card-body">
-                                                <ul>
-                                                    <li>Clases 3x semana</li>
-                                                    <li>Clases grupales de 1 hora</li>
-                                                    <li>Entrenamiento guiado</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
- 
-
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <div class="card-header text-center">
-                                                <p class="mb-0 fw-bold">Plan Básico</p>
-                                                <p class="mb-0 text-secondary">$80/mes</p>
-                                            </div>
-                                            <div class="card-body">
-                                                <ul>
-                                                    <li>Acceso a la sala de pesas</li>
-                                                    <li>Acceso a zona de cardio</li>
-                                                    <li>Evaluación física inicial</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                
-                            </div>
-                        </div>
-                        
-                        <button class="btn btn-outline-danger mt-3" onclick="window.location.href='/admin/Registrar_clienteP3.html'">Continuar</button>
-                        <button class="btn btn-outline-danger mt-3" onclick="window.location.href='/admin/Registrar_clienteP1.html'">Volver</button>
-                        
-                    </div>
-
-                    <div class="col-4 my-auto flex-column justify-content-center d-flex h-100">
-                        <div class="d-flex gap-3 align-items-center ms-5">
-                            <div class="rounded-circle bg-danger justify-content-center align-items-center text-center d-flex text-white fw-bold" style="height: 40px; width: 40px;">
-                                1
-                            </div>
-                            <span class="text-danger fs-5">Completar datos del usuario</span>
-                        </div>
-                        
-                        <div class="d-flex gap-3 align-items-center mt-4 ms-5">
-                            <div class="rounded-circle bg-danger justify-content-center align-items-center d-flex text-white fw-bold" style="height: 40px; width: 40px;">
-                                2
-                            </div>
-                            <span class="text-danger fs-5 fw-bold">Seleccionar plan</span>
-                        </div>
-
-                        <div class="d-flex gap-3 align-items-center mt-4 ms-5">
-                            <div class="rounded-circle border border-danger justify-content-center align-items-center  d-flex text-secondary fw-bold" style="height: 40px; width: 40px;">
-                                3
-                            </div>
-                            <span class="text-secondary fs-5 ">Completar compra</span>
-                        </div>
-
-                        <div class="d-flex gap-3 align-items-center mt-4 ms-5">
-                            <div class="rounded-circle border border-danger  justify-content-center align-items-center  d-flex text-secondary fw-bold" style="height: 40px; width: 40px;">
-                                4
-                            </div>
-                            <span class="text-secondary fs-5">¡Listo! Usuario registrado</span>
-                        </div>
-                    </div>
-
+                <div class="d-flex justify-content-between">
+                    <p class="mb-0 fs-2 text-danger fw-bold">PANEL DE NOTIFICACIONES</p>
+                    <form action="">
+                        <select name="" id="" class="form-select">
+                            <option value="">Nueva suscripción</option>
+                            <option value="">Actualización de suscripcón</option>
+                            <option value="">Recordatorios</option>
+                        </select>
+                    </form>
                 </div>
+                <p class="mb-0 fs-5 text-secondary mb-4">Gestione todas las notificaciones</p>
 
+                    <table class="table table-striped shadow-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">Notificación</th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Envío</th>
+                                <th scope="col">Destino</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Operación</th>
+                            </tr>
+                        </thead>
 
+                        <tbody class="">
+                            <tr>
+                                <td scope="row">
+                                    <p class="mb-0 fw-bold text-secondary">Nuevo Plan de entrenamiento Funcional Grupal</p>
+                                    <p class="mb-0 text-secondary">Entrenamiento en grupo enfocado en fuerza y movilidad.</p>
+                                </td>
+                                <td>
+                                    <span>Nueva suscripción</span>
+                                </td>
+                                <td>25/08/2026</td>
+                                <td>Todos</td>
+                                <td>
+                                    <span class="badge bg-success text-white">Enviado</span>
+                                </td>
+                                <td><a href="Noti_editar.html" class="nav-link disabled">Editar</a></td>
+                            </tr>
+
+                            <tr>
+                                <td scope="row">
+                                    <p class="mb-0 fw-bold text-secondary">Suscripción actualizada: Fuerza Total</p>
+                                    <p class="mb-0 text-secondary">Se modificó la suscripción al plan Fuerza total</p>
+                                </td>
+                                <td>
+                                    <span>Actualización</span>
+                                </td>
+                                <td>10/08/2026</td>
+                                <td>Todos</td>
+                                <td>
+                                    <span class="badge bg-success text-white">Enviado</span>
+                                </td>
+                                <td><a href="Noti_editar.html" class="nav-link disabled">Editar</a></td>
+                            </tr>
+
+                            <tr>
+                                <td scope="row">
+                                    <p class="mb-0 fw-bold text-secondary">Nuevo plan de entrenamiento: Plan Básico</p>
+                                    <p class="mb-0 text-secondary">Se modificó la suscripción al plan Fuerza total</p>
+                                </td>
+                                <td>
+                                    <span>Nueva suscripción</span>
+                                </td>
+                                <td>01/08/2026</td>
+                                <td>Todos</td>
+                                <td>
+                                    <span class="badge bg-warning text-dark">Borrador</span>
+                                </td>
+                                <td><a href="Noti_editar.html" class="nav-link text-secondary">Editar</a></td>
+                            </tr>
+
+                            <tr>
+                                <td scope="row">
+                                    <p class="mb-0 fw-bold text-secondary">Recordatorio de pago de suscripción</p>
+                                    <p class="mb-0 text-secondary">Su plan esta por vencer en 7 días</p>
+                                </td>
+                                <td>
+                                    <span>Recordatorio</span>
+                                </td>
+                                <td>01/08/2026</td>
+                                <td>Por vencer</td>
+                                <td>
+                                    <span class="badge bg-success text-white">Enviado</span>
+                                </td>
+                                <td><a href="Noti_editar.html" class="nav-link disabled">Editar</a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
         
