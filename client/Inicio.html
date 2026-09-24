@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ForjaGym</title>
 </head>
 <body>
 
@@ -57,69 +58,127 @@
             </nav>
         </div>
     </header>
-    <main>
-        <!-- PAGINA 1 -->
-        <div class="bg-primary bg-opacity-10">
-            <div class="container d-flex align-items-center flex-grow-1 min-vh-100 ">
-                <div class="row w-100">
-                    <div class="col col-6">
-                        <h4 class=" mb-1 text-primary">BIENVENIDO A FORJAGYM </h4>
-                        <p class="mb-2 fw-bold display-3">FORJA TU CUERPO</p>
-                        <H2 class="mb-5 text-secondary">Entrena con equipos de primer nivel y un plan hecho para tus objetivos, sin importar tu punto de partida.</H2>
-                        <button class="btn btn-primary btn-lg">Empieza hoy</button>         
+        <main>
+        <!-- HERO -->
+        <section class="hero-inicio">
+            <img src="img/banner.jpg" alt="Imagen de un gimnasio" class="hero-imagen">
+            <div class="hero-sombra"></div>
+            <div class="container text-center hero-contenido">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1>Forja tu mejor versión.</h1>
+                        <p class="mx-auto">Entrenamientos personalizados, nutrición a medida y resultados reales.
+                            Únete a la comunidad que ya está transformando su cuerpo y mente en ForjaGYM.</p>
+                        <div class="d-flex gap-3 mt-4 flex-wrap justify-content-center">
+                            <a href="#planes" class="btn btn-hero-primario">Ver planes</a>
+                            <a href="pages/contacto.html" class="btn btn-hero-primario">Contáctanos</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- PAGINA 1 -->
-        <div class="min-vh-100 d-flex">
-            <div class="container flex-grow-1 d-flex align-items-center">
-                <div class="row text-center">
-                    <p class="display-5 mb-5 fw-bold">Beneficios de ForjaGYM</p>
-                    
-                    <div class="col-4 ">
-                        <div class="card py-5 bg-primary text-white">
-                            <div class="card-body">
+        </section>
 
-                                <i class="bi bi-person-badge-fill fs-1"></i>
-                                <p class="fs-5 mb-2 mt-4 fw-bold">ENTRENADORES ESPECIALIZADOS</p>
-                                <p class="mb-0  fs-5">Entrenamientos personalizados por profesionales certificados</p>
-                                
-                            </div>
+        <!-- BENEFICIOS -->
+        <section class="seccion-beneficios">
+            <div class="container">
+                <h2 class="text-center mb-5">¿Por qué elegir ForjaGYM?</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="tarjeta-beneficio">
+                            <div class="icono-beneficio">💪</div>
+                            <h3>Entrenadores expertos</h3>
+                            <p>Profesionales certificados que te acompañan paso a paso en cada meta.</p>
                         </div>
                     </div>
-
-                    <div class="col-4">
-                        <div class="card py-5 ">
-                            <div class="card-body ">
-
-                                <i class="bi bi-apple fs-1"></i>
-                                <p class="fs-5 mb-2 mt-4 fw-bold">NUTRICIÓN PERSONALIZADA</p>
-                                <p class="mb-0  fs-5">Planes de alimentación diseñados para tus objetivos y estilo de vida</p>
-                                
-                            </div>
+                    <div class="col-md-4">
+                        <div class="tarjeta-beneficio">
+                            <div class="icono-beneficio">🥗</div>
+                            <h3>Nutrición personalizada</h3>
+                            <p>Planes de alimentación diseñados para tus objetivos y estilo de vida.</p>
                         </div>
                     </div>
-
-                    <div class="col-4 mb-">
-                        <div class="card py-5 bg-primary text-white">
-                            <div class="card-body">
-
-                                <i class="bi bi-graph-up-arrow fs-1"></i>
-                                <p class="fs-5 mb-2 mt-4 fw-bold">RESULTADOS MEDIBLES</p>
-                                <p class="mb-0  fs-5">Seguimiento mensual con métricas claras y ajustes continuos</p>
-                                
-                            </div>
+                    <div class="col-md-4">
+                        <div class="tarjeta-beneficio">
+                            <div class="icono-beneficio">📈</div>
+                            <h3>Resultados medibles</h3>
+                            <p>Seguimiento mensual con métricas claras y ajustes continuos.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
+        </section>
 
+        <!-- ===== SECCIÓN: PLANES DESTACADOS ===== -->
+        <section id="planes" class="seccion-planes">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestros planes</h2>
 
+                <div class="row g-4 justify-content-center">
+                    <!-- PLAN BÁSICO -->
+                    <div class="col-md-4">
+                        <div class="tarjeta-plan">
+                            <h3>Básico</h3>
+                            <p class="descripcion-plan">Ideal si recién empiezas.</p>
+                            <p class="precio-plan">S/ 89<span>/mes</span></p>
+                            <ul class="lista-plan">
+                                <li><i class="fa-solid fa-check"></i> Acceso a sala de pesas</li>
+                                <li><i class="fa-solid fa-check"></i> Horario diurno (6am - 5pm)</li>
+                                <li><i class="fa-solid fa-check"></i> 1 evaluación física al mes</li>
+                                <li class="no-incluido"><i class="fa-solid fa-xmark"></i> Clases grupales</li>
+                                <li class="no-incluido"><i class="fa-solid fa-xmark"></i> Plan nutricional</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- PLAN ESTÁNDAR -->
+                    <div class="col-md-4">
+                        <div class="tarjeta-plan tarjeta-plan-destacada">
+                            <span class="badge-popular">Más popular</span>
+                            <h3>Estándar</h3>
+                            <p class="descripcion-plan">El favorito de nuestra comunidad.</p>
+                            <p class="precio-plan">S/ 129<span>/mes</span></p>
+                            <ul class="lista-plan">
+                                <li><i class="fa-solid fa-check"></i> Acceso a sala de pesas</li>
+                                <li><i class="fa-solid fa-check"></i> Horario extendido (6am - 10pm)</li>
+                                <li><i class="fa-solid fa-check"></i> Clases grupales ilimitadas</li>
+                                <li><i class="fa-solid fa-check"></i> 2 evaluaciones físicas al mes</li>
+                                <li class="no-incluido"><i class="fa-solid fa-xmark"></i> Plan nutricional</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- PLAN PREMIUM -->
+                    <div class="col-md-4">
+                        <div class="tarjeta-plan">
+                            <h3>Premium</h3>
+                            <p class="descripcion-plan">Para resultados serios.</p>
+                            <p class="precio-plan">S/ 179<span>/mes</span></p>
+                            <ul class="lista-plan">
+                                <li><i class="fa-solid fa-check"></i> Acceso 24/7</li>
+                                <li><i class="fa-solid fa-check"></i> Clases grupales ilimitadas</li>
+                                <li><i class="fa-solid fa-check"></i> Entrenador personal (2x semana)</li>
+                                <li><i class="fa-solid fa-check"></i> Plan nutricional personalizado</li>
+                                <li><i class="fa-solid fa-check"></i> Evaluaciones físicas ilimitadas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN: FINAL ===== -->
+        <section class="seccion-cta">
+            <div class="container">
+                <div class="caja-cta text-center">
+                    <h2>¿Listo para comenzar?</h2>
+                    <p>Escríbenos y te ayudamos a elegir el plan ideal para empezar hoy mismo tu transformación.</p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="pages/contacto.html" class="btn btn-hero-primario">Contáctanos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
     <footer class="bg-dark text-white pt-5 pb-3 mt-5">
         <div class="container">
 
