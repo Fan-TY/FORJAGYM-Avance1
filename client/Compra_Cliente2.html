@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css"
     <title>Document</title>
 </head>
 <body>
@@ -197,100 +198,235 @@
 
     </main>
 
-    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/"
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="sticky-top">
+        <div class=" bg-body shadow-sm">
+            <nav class="navbar navbar-expand-lg container ">
+
+                <i class="bi bi-fire fs-3 me-2 text-primary"></i>
+                <p class="mb-0 fw-bold fs-5">FORJAGYM</p>
+
+                <div class="collapse navbar-collapse  ms-2 py-1">
+                    <ul class="navbar-nav gap-5 fw-bold ms-auto">
+                            <li class="nav-item">
+                                <a href="Inicio.html" class="nav-link">Inicio</a>
+                            </li>
+
+                            <li class="nav-item"> 
+                                <a href="Contacto.html" class="nav-link">Contacto</a>
+                            </li>
+
+
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="promociones_ref" aria-expanded="false">Suscripciones</a>
+                                <ul class="dropdown-menu" aria-labelledby="promociones_ref">
+                                    <li><a href="sus_planes.html" class="dropdown-item">Planes</a></li>
+                                    <li><a href="sus_productos.html" class="dropdown-item">Productos</a></li>
+                                </ul>
+                            </li>   
+
+                            <li class="nav-item">
+                                <a href="Notificaciones.html" class="nav-link">Notificaciones</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="Compra_Cliente1.html" class="nav-link">Carrito</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="usuario_ref" aria-expanded="false">Usuario</a>
+                                <ul class="dropdown-menu" aria-labelledby="usuario_ref">
+                                    <li><a href="perfil_cliente.html" class="dropdown-item">Ver perfil</a></li>
+                                    <li><a href="Historial_Pago.html" class="dropdown-item">Ver historial</a></li>
+                                    <li><a href="" class="dropdown-item">Cerrar sesión</a></li>
+                                </ul>
+                            </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- PAGINA 1 -->
+        <div class="container d-flex pt-5 flex-grow-1 min-vh-100 flex-column">
+
+            <p class="fs-2 text-primary fw-bold mb-0">TU CARRITO</p>
+            <p class="text-secondary fs-5 mb-0">Completa tu compra para comenzar a entrenar sin límites</p>
+            
+            <div class="row">
+                <div class="col-12 mt-4 mb-4 d-flex">
+                    <div class="d-flex gap-3 align-items-center">
+                        <div class="rounded-circle bg-primary justify-content-center align-items-center text-center d-flex text-white fw-bold" style="height: 40px; width: 40px;">
+                                1
+                        </div>
+                        <span class="text-primary fs-5 fw-bold">Seleccionar productos</span>
+                    </div>
+
+                    <div class="d-flex gap-3 align-items-center ms-4">
+                        <div class="rounded-circle border border-primary justify-content-center align-items-center text-center d-flex text-primary fw-bold" style="height: 40px; width: 40px;">
+                                2
+                        </div>
+                        <span class="text-primary fs-5 ">Escoger método de pago</span>
+                    </div>
+
+                    <div class="d-flex gap-3 align-items-center ms-4">
+                        <div class="rounded-circle border border-primary justify-content-center align-items-center text-center d-flex text-primary fw-bold" style="height: 40px; width: 40px;">
+                                3
+                        </div>
+                        <span class="text-primary fs-5 ">¡Listo! Pedido completo</span>
+                    </div>
+
+                </div>
+
+                <div class="col-7">
+                    <div class="card">
+                        <div class="card-header justify-content-between d-flex">
+                            <span class="text-secondary fw-bold">Artículos</span>
+                            <span class="text-secondary">1 en total</span>
+                        </div>
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div class="">
+                                <p class="mb-0 text-primary fw-bold fs-5">MEMBRESÍA</p>
+                                <p class="mb-0 text-secondary fw-bold">Plan Fuerza Total</p>
+                                <span class="text-secondary">
+                                    se activa hoy 
+                                    <div class="badge bg-primary ms-2">Pago recurrente mensual</div>
+                                </span>
+                            </div>
+
+                            <div class="text-center">
+                                <p class="mb-0 fs-5 fw-bold text-secondary">$180</p>
+                                <button class="btn btn-link text-decoration-none p-0 text-danger">Eliminar</button>
+                            </div>
+                        </div>
+
+                        <div class="card-body border-top">
+                            <button class="btn btn-link text-decoration-none p-0">+ Añadir Artículo</button>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 d-flex gap-2">
+                        <button class="btn btn-outline-primary" onclick="window.location.href='/client/Compra_Cliente2.html'" type="button">Continuar el pago</button>
+                        <button class="btn btn-outline-primary" onclick="window.location.href='/client/Inicio.html'" type="button">Cancelar</button>
+                    </div>
+                </div>
+            
+
+                <div class="col-5">
+                    <div class="card bg-primary text-white rounded-4 border-0">
+                        <div class="card-body">
+                            <p class="fw-bold fs-5 mb-1">Resumen de pago</p>
+                            <div class="justify-content-between d-flex">
+                                <span class="fw-bold">Plan Fuerza Total</span>
+                                <span>$180</span>
+                            </div>
+
+                            <div class="justify-content-between d-flex pb-2">
+                                <span>IGV(18%)</span>
+                                <span>$32.40</span>
+                            </div>
+
+                            <div class="justify-content-between d-flex fw-bold border-top border-2 pt-2">
+                                <span>Total</span>
+                                <span>$212.40</span>
+                            </div>
+
+                            <div class="bg-white bg-opacity-25 rounded-3 mt-2 py-1 px-1">
+                                <p class="mb-0 mx-1">
+                                Se renovará automáticamente el mismo día de cada mes
+                                </p>
+                                <p class="mb-0 mx-1 text-white fw-bold">
+                                    Próxima renovación: 18 de octubre de 2026
+                                </p>
+                            </div>
+
+                        </div>
+                        
+
+
+                        
+
+                    </div>
+                </div>
+
+
+                
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer pt-5 pb-3">
         <div class="container">
 
-            
             <div class="row g-4">
-                
+
                 <div class="col-lg-4 col-md-6">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="bi bi-fire fs-3 me-2 text-primary"></i>
-                        <span class="fw-bold fs-4">FORJAGYM</span>
+                    <div class="d-flex align-items-center mb-3 marca-navbar">
+                        <i class="bi bi-fire fs-3 me-2"></i>
+                        <span class="footer-texto fw-bold fs-4">FORJAGYM</span>
                     </div>
-                    <p class="text-white-50 mb-4">
+                    <p class="footer-texto mb-4">
                         Forja tu cuerpo y tu mente con entrenadores especializados,
                         planes personalizados y resultados medibles. Tu mejor versión empieza aquí.
                     </p>
 
-                    
                     <div class="d-flex gap-3">
-                        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white fs-5"><i class="bi bi-tiktok"></i></a>
-                        <a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
-                        <a href="#" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.instagram.com" class="fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com" class="fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.whatsapp.com" class="fs-5"><i class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
 
-                
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="fw-bold mb-3 text-primary">Enlaces</h5>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Enlaces</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Inicio</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Contacto</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Planes</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Productos</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Notificaciones</a></li>
+                        <li class="mb-2"><a href="Inicio.html">Inicio</a></li>
+                        <li class="mb-2"><a href="Contacto.html">Contacto</a></li>
+                        <li class="mb-2"><a href="sus_planes.html">Planes</a></li>
+                        <li class="mb-2"><a href="sus_productos.html">Productos</a></li>
+                        <li class="mb-2"><a href="Notificaciones.html">Notificaciones</a></li>
                     </ul>
                 </div>
 
-                
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="fw-bold mb-3 text-primary">Soporte</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Preguntas frecuentes</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Pagos</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Reembolsos</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Términos y condiciones</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Política de privacidad</a></li>
-                    </ul>
-                </div>
-
-                
                 <div class="col-lg-4 col-md-6">
-                    <h5 class="fw-bold mb-3 text-primary">Contacto</h5>
-
-                    <div class="d-flex align-items-start mb-3">
-                        <i class="bi bi-geo-alt fs-5 me-3 text-primary"></i>
-                        <p class="mb-0 text-white-50">Tupac Amaru 100 - Peru</p>
-                    </div>
-
-                    <div class="d-flex align-items-start mb-3">
-                        <i class="bi bi-envelope fs-5 me-3 text-primary"></i>
-                        <p class="mb-0 text-white-50">ForjaGYM.pe@gmail.com</p>
-                    </div>
-
-                    <div class="d-flex align-items-start mb-3">
-                        <i class="bi bi-telephone fs-5 me-3 text-primary"></i>
-                        <p class="mb-0 text-white-50">+51 977 450 891</p>
-                    </div>
-
-                    <div class="d-flex align-items-start">
-                        <i class="bi bi-clock fs-5 me-3 text-primary"></i>
-                        <p class="mb-0 text-white-50">
-                            Lun - Sáb: 6:00 am - 10:00 pm<br>
-                            Dom: 8:00 am - 2:00 pm
-                        </p>
-                    </div>
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <p class="footer-texto mb-2"><i class="bi bi-geo-alt footer-icono me-2"></i>Tupac Amaru 100 - Perú
+                    </p>
+                    <p class="footer-texto mb-2"><i class="bi bi-envelope footer-icono me-2"></i>ForjaGYM.pe@gmail.com
+                    </p>
+                    <p class="footer-texto mb-0"><i class="bi bi-telephone footer-icono me-2"></i>+51 977 450 891</p>
                 </div>
 
             </div>
 
-            
-            <hr class="border-secondary my-4">
+            <hr class="my-4">
 
-            
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
-                    <p class="mb-0 text-white-50 small">
-                        © 2026 <span class="">FORJAGYM</span>. Todos los derechos reservados.
+                    <p class="mb-0 footer-texto small">
+                        &copy; 2026 FORJAGYM. Todos los derechos reservados.
                     </p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-white-50 text-decoration-none small me-3">Términos</a>
-                    <a href="#" class="text-white-50 text-decoration-none small me-3">Privacidad</a>
-                    <a href="#" class="text-white-50 text-decoration-none small">Cookies</a>
+                    <a href="#" class="small me-3">Términos</a>
+                    <a href="#" class="small me-3">Privacidad</a>
+                    <a href="#" class="small">Cookies</a>
                 </div>
             </div>
 
