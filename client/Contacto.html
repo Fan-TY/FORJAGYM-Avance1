@@ -1,56 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>ForjaGym - Contacto</title>
 </head>
+
 <body>
-
     <header class="sticky-top">
-        <div class=" bg-body shadow-sm">
-            <nav class="navbar navbar-expand-lg container ">
+        <div class="bg-body shadow-sm">
+            <nav class="navbar navbar-expand-lg container">
 
-                <i class="bi bi-fire fs-3 me-2 text-primary"></i>
-                <p class="mb-0 fw-bold fs-5">FORJAGYM</p>
+                <a href="Inicio.html" class="d-flex align-items-center text-decoration-none marca-navbar">
+                    <i class="bi bi-fire fs-3 me-2"></i>
+                    <span class="fw-bold fs-5">FORJAGYM</span>
+                </a>
 
-                <div class="collapse navbar-collapse  ms-2 py-1">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse ms-2 py-1" id="navbarSupportedContent">
                     <ul class="navbar-nav gap-5 fw-bold ms-auto">
-                            <li class="nav-item">
-                                <a href="Inicio.html" class="nav-link">Inicio</a>
-                            </li>
+                        <li class="nav-item">
+                            <a href="Inicio.html" class="nav-link">Inicio</a>
+                        </li>
 
-                            <li class="nav-item"> 
-                                <a href="Contacto.html" class="nav-link">Contacto</a>
-                            </li>
+                        <li class="nav-item">
+                            <a href="Contacto.html" class="nav-link active">Contacto</a>
+                        </li>
 
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                id="promociones_ref" aria-expanded="false">Suscripciones</a>
+                            <ul class="dropdown-menu" aria-labelledby="promociones_ref">
+                                <li><a href="sus_planes.html" class="dropdown-item">Planes</a></li>
+                                <li><a href="sus_productos.html" class="dropdown-item">Productos</a></li>
+                            </ul>
+                        </li>
 
-                            <li class="nav-item dropdown">
-                                <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="promociones_ref" aria-expanded="false">Suscripciones</a>
-                                <ul class="dropdown-menu" aria-labelledby="promociones_ref">
-                                    <li><a href="sus_planes.html" class="dropdown-item">Planes</a></li>
-                                    <li><a href="sus_productos.html" class="dropdown-item">Productos</a></li>
-                                </ul>
-                            </li>   
+                        <li class="nav-item">
+                            <a href="Notificaciones.html" class="nav-link">Notificaciones</a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a href="Notificaciones.html" class="nav-link">Notificaciones</a>
-                            </li>
+                        <li class="nav-item">
+                            <a href="Compra_Cliente1.html" class="nav-link">Carrito</a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a href="Compra_Cliente1.html" class="nav-link">Carrito</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" id="usuario_ref" aria-expanded="false">Usuario</a>
-                                <ul class="dropdown-menu" aria-labelledby="usuario_ref">
-                                    <li><a href="perfil_cliente.html" class="dropdown-item">Ver perfil</a></li>
-                                    <li><a href="Historial_Pago.html" class="dropdown-item">Ver historial</a></li>
-                                    <li><a href="" class="dropdown-item">Cerrar sesión</a></li>
-                                </ul>
-                            </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                id="usuario_ref" aria-expanded="false">Usuario</a>
+                            <ul class="dropdown-menu" aria-labelledby="usuario_ref">
+                                <li><a href="perfil_cliente.html" class="dropdown-item">Ver perfil</a></li>
+                                <li><a href="Historial_Pago.html" class="dropdown-item">Ver historial</a></li>
+                                <li><a href="#" class="dropdown-item">Cerrar sesión</a></li>
+                            </ul>
+                        </li>
 
                     </ul>
                 </div>
@@ -59,206 +72,187 @@
     </header>
 
     <main>
-        <!-- PAGINA 1 -->
-        <div class="container d-flex flex-column justify-content-center flex-grow-1 min-vh-100">
-            <DIV>
-                <p class="fs-1 fw-bold text-primary mb-0">CONTACTANOS</p>
-                <p class="fs-4 mb-5 text-secondary">Escribenos un mensaje</p>
-            </DIV>
-
-            <div class="row w-100 d-flex ">
-                <div class="col col-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="bi bi-geo-alt-fill fs-2 me-3 text-primary"></i>
-                        <div>
-                            <h4 class="text-primary">Nuestra dirección</h4>
-                            <p class="mb-0">Av. Tupac Amaru 100</p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="bi bi-telephone-fill fs-2 me-3 text-primary"></i>
-                        <div>
-                            <h4 class="text-primary">Nuestra teléfono</h4>
-                            <p class="mb-0">WhatsApp: +51 987 654 321 <br> Oficina: 51 3456 8974</p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center">
-                        <i class="bi bi-envelope-at-fill fs-2 me-3 text-primary"></i>
-                        <div>
-                            <h4 class="text-primary">Nuestro Email</h4>
-                            <p class="mb-0">ForjaGYM.pe@gmail.com <br> ForjaGYM_SP@gmail.com</p>
-                        </div>
-                    </div>
-
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge-ayuda">Estamos para ayudarte</span>
+                    <h1 class="mt-3">Contáctanos</h1>
+                    <p class="subtitulo-seccion mx-auto" style="max-width: 500px;">
+                        Escríbenos un mensaje y te responderemos a la brevedad.
+                    </p>
                 </div>
 
-                <div class="col ">
-                    <div class="form-group d-flex flex-column gap-2">
-                        <div class="row">
-                            <div class="col">
-                                <label for="">Nombre de usuario</label>
-                                <input type="text" placeholder="Tu nombre" class="form-control" style="background-color: rgb(247, 243, 243);">
-                            </div>
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <div class="mapa-contacto mb-4">
+                            <iframe
+                                src="https://maps.google.com/maps?q=Av.+Tupac+Amaru+100,+Lima,+Peru&z=15&output=embed"
+                                width="100%" height="220" style="border:0;" loading="lazy">
+                            </iframe>
+                        </div>
 
-                            <div class="col">
-                                <label for="">Correo eléctronico</label>
-                                <input type="email" placeholder="correo@gmail.com" class="form-control" style="background-color: rgb(247, 243, 243);">
+                        <div class="info-contacto-item">
+                            <div class="info-contacto-icono">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div>
+                                <h4>Nuestra dirección</h4>
+                                <p>Av. Tupac Amaru 100 - Perú</p>
                             </div>
                         </div>
 
-                        <div class="d-flex flex-column gap-2">
-                            <label for="">Asunto</label>
-                            <select name="" id="" class="form-control" style="background-color: rgb(247, 243, 243);">
-                                <option value="">Solicitud de reembolso</option>
-                                <option value="">Problemas de pago</option>
-                                <option value="">Consulta de membresía</option>
-                                <option value="">otro asunto</option>
-                            </select>
-
-                            <label for="">Mensaje personalizado</label>
-                            <textarea name="" id="" class="form-control" placeholder="Cuéntanos en qué podemos ayudarte..." style="background-color: rgb(247, 243, 243);"></textarea>
-
-                            <div class="">
-                                <button class="btn btn-primary mt-3 btn-lg">Enviar mensaje</button>
+                        <div class="info-contacto-item">
+                            <div class="info-contacto-icono">
+                                <i class="bi bi-telephone-fill"></i>
                             </div>
+                            <div>
+                                <h4>Nuestro teléfono</h4>
+                                <p>WhatsApp: +51 987 654 321<br>Oficina: +51 1 3456 8974</p>
+                            </div>
+                        </div>
+
+                        <div class="info-contacto-item">
+                            <div class="info-contacto-icono">
+                                <i class="bi bi-envelope-at-fill"></i>
+                            </div>
+                            <div>
+                                <h4>Nuestro email</h4>
+                                <p>ForjaGYM.pe@gmail.com<br>ForjaGYM_SP@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="caja-formulario bg-light rounded-4 p-4">
+                            <form class="formulario-contacto">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" id="nombre" placeholder="Tu nombre" class="input-contacto">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="correo">Correo electrónico</label>
+                                        <input type="email" id="correo" placeholder="correo@gmail.com" class="input-contacto">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="telefono">Teléfono</label>
+                                        <input type="tel" id="telefono" placeholder="987 654 321" class="input-contacto">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="asunto">Asunto</label>
+                                        <input type="text" id="asunto" placeholder="Ej: Consulta de membresía" class="input-contacto">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="mensaje">Mensaje</label>
+                                        <textarea id="mensaje" rows="4" class="input-contacto"
+                                            placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+                                    </div>
+
+                                    <div class="col-12 casilla-privacidad">
+                                        <input type="checkbox" id="privacidad">
+                                        <label for="privacidad">Acepto la política de privacidad</label>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- PAGINA 2 -->
-        <div class="bg-primary min-vh-100 d-flex align-items-center">
-            <div class="container text-center text-white fs-5  ">
-                <i class="bi bi-calendar-check fs-2 "></i>
-                <p class="display-6 mb-5 mt-3 fw-bold">HORARIO DE ATENCIÓN</p>
-                <table class="table align-middle ">
-                        <tbody>
-                                <tr >
-                                    <td class="bg-transparent text-white">Lunes a Viernes</td>
-                                    <td class="bg-transparent text-white">8:00 - 23:00</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="bg-white bg-opacity-10 text-white" >Sábado</td>
-                                    <td class="bg-white bg-opacity-10 text-white">8:00 - 14:00</td>
-                                </tr>
-                                <tr>
-                                    <td class="bg-transparent text-white">Domingo</td>
-                                    <td class="bg-transparent text-white">CERRADO</td>
-                                </tr>
-                        </tbody>
-                </table>
+        <section class="py-5 seccion-horario">
+            <div class="container">
+                <div class="row text-center g-3">
+                    <div class="col-md-4">
+                        <div class="fila-horario">
+                            <p class="fila-horario-dia mb-1">Lunes a Viernes</p>
+                            <p class="fila-horario-hora mb-0">8:00 - 23:00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fila-horario">
+                            <p class="fila-horario-dia mb-1">Sábado</p>
+                            <p class="fila-horario-hora mb-0">8:00 - 14:00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fila-horario">
+                            <p class="fila-horario-dia mb-1">Domingo</p>
+                            <p class="fila-horario-hora mb-0">Cerrado</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-
-
+        </section>
     </main>
 
-    <footer class="bg-dark text-white pt-5 pb-3 ">
+    <footer class="footer pt-5 pb-3">
         <div class="container">
 
-            
             <div class="row g-4">
-                
+
                 <div class="col-lg-4 col-md-6">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="bi bi-fire fs-3 me-2 text-primary"></i>
-                        <span class="fw-bold fs-4">FORJAGYM</span>
+                    <div class="d-flex align-items-center mb-3 marca-navbar">
+                        <i class="bi bi-fire fs-3 me-2"></i>
+                        <span class="footer-texto fw-bold fs-4">FORJAGYM</span>
                     </div>
-                    <p class="text-white-50 mb-4">
+                    <p class="footer-texto mb-4">
                         Forja tu cuerpo y tu mente con entrenadores especializados,
                         planes personalizados y resultados medibles. Tu mejor versión empieza aquí.
                     </p>
 
-                    
                     <div class="d-flex gap-3">
-                        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white fs-5"><i class="bi bi-tiktok"></i></a>
-                        <a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
-                        <a href="#" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.instagram.com" class="fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com" class="fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.whatsapp.com" class="fs-5"><i class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
 
-                
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="fw-bold mb-3 text-primary">Enlaces</h5>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Enlaces</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Inicio</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Contacto</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Planes</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Productos</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Notificaciones</a></li>
+                        <li class="mb-2"><a href="Inicio.html">Inicio</a></li>
+                        <li class="mb-2"><a href="Contacto.html">Contacto</a></li>
+                        <li class="mb-2"><a href="Inicio.html#planes">Planes</a></li>
                     </ul>
                 </div>
 
-                
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="fw-bold mb-3 text-primary">Soporte</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Preguntas frecuentes</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Pagos</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Reembolsos</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Términos y condiciones</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Política de privacidad</a></li>
-                    </ul>
-                </div>
-
-                
                 <div class="col-lg-4 col-md-6">
-                    <h5 class="fw-bold mb-3 text-primary">Contacto</h5>
-
-                    <div class="d-flex align-items-start mb-3">
-                        <i class="bi bi-geo-alt fs-5 me-3 text-primary"></i>
-                        <p class="mb-0 text-white-50">Tupac Amaru 100 - Peru</p>
-                    </div>
-
-                    <div class="d-flex align-items-start mb-3">
-                        <i class="bi bi-envelope fs-5 me-3 text-primary"></i>
-                        <p class="mb-0 text-white-50">ForjaGYM.pe@gmail.com</p>
-                    </div>
-
-                    <div class="d-flex align-items-start mb-3">
-                        <i class="bi bi-telephone fs-5 me-3 text-primary"></i>
-                        <p class="mb-0 text-white-50">+51 977 450 891</p>
-                    </div>
-
-                    <div class="d-flex align-items-start">
-                        <i class="bi bi-clock fs-5 me-3 text-primary"></i>
-                        <p class="mb-0 text-white-50">
-                            Lun - Sáb: 6:00 am - 10:00 pm<br>
-                            Dom: 8:00 am - 2:00 pm
-                        </p>
-                    </div>
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <p class="footer-texto mb-2"><i class="bi bi-geo-alt footer-icono me-2"></i>Tupac Amaru 100 - Perú</p>
+                    <p class="footer-texto mb-2"><i class="bi bi-envelope footer-icono me-2"></i>ForjaGYM.pe@gmail.com</p>
+                    <p class="footer-texto mb-0"><i class="bi bi-telephone footer-icono me-2"></i>+51 977 450 891</p>
                 </div>
 
             </div>
 
-            
-            <hr class="border-secondary my-4">
+            <hr class="my-4">
 
-            
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
-                    <p class="mb-0 text-white-50 small">
-                        © 2026 <span class="">FORJAGYM</span>. Todos los derechos reservados.
+                    <p class="mb-0 footer-texto small">
+                        &copy; 2026 FORJAGYM. Todos los derechos reservados.
                     </p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-white-50 text-decoration-none small me-3">Términos</a>
-                    <a href="#" class="text-white-50 text-decoration-none small me-3">Privacidad</a>
-                    <a href="#" class="text-white-50 text-decoration-none small">Cookies</a>
+                    <a href="#" class="small me-3">Términos</a>
+                    <a href="#" class="small me-3">Privacidad</a>
+                    <a href="#" class="small">Cookies</a>
                 </div>
             </div>
 
         </div>
     </footer>
-    
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
