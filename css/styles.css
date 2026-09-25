@@ -10,9 +10,6 @@
 
     --fuente-texto: 'Open Sans', sans-serif;
     --fuente-titulo: 'Poppins', sans-serif;
-
-    --bs-primary: var(--color-azul);
-    --bs-primary-rgb: 18, 57, 172;
 }
 
 body {
@@ -308,6 +305,10 @@ h1, h2, h3 {
     color: var(--color-gris);
 }
 
+.caja-formulario {
+    border: 1px solid var(--color-azul);
+}
+
 .formulario-contacto label {
     color: var(--color-texto);
     font-weight: 600;
@@ -341,6 +342,7 @@ textarea.input-contacto {
 
 .input-contacto:focus {
     border-color: var(--color-azul);
+    box-shadow: 0 0 0 3px rgba(18, 57, 172, 0.25);
     outline: none;
 }
 
@@ -385,7 +387,7 @@ textarea.input-contacto {
 }
 
 .footer h5 {
-    color: var(--color-celesteClaro);
+    color: var(--color-blanco);
 }
 
 .footer hr {
@@ -393,18 +395,22 @@ textarea.input-contacto {
 }
 
 .footer-texto {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--color-blanco);
 }
 
 .footer-icono {
-    color: var(--color-celesteClaro);
+    color: var(--color-blanco);
 }
 
 .footer a {
-    color: var(--color-celesteClaro);
+    color: var(--color-blanco);
     text-decoration: none;
 }
 
 .footer a:hover {
-    color: var(--color-blanco);
+    color: var(--color-celesteClaro);
+}
+
+.footer .marca-navbar i {
+    color: var(--color-celeste);
 }
